@@ -25,14 +25,10 @@ class Hotels(webdriver.Chrome):
 
     def cancelCommercial(self):
         # Cancel any commercial pop-ups
-        for _ in range(2):
-            element = self.find_element(By.CLASS_NAME, 'a83ed08757')
-            # Check if the element exists
-            if element:
-                try:
-                    element.click()
-                except:
-                    pass
+        try:
+            element = self.find_element(By.XPATH, '//button[@aria-label="Dismiss sign-in info."]').click()
+        except:
+            pass
 
     def destinationPlace(self):
         # Set the destination for your trip
@@ -147,7 +143,7 @@ class Hotels(webdriver.Chrome):
                     hotel_price = property.find_element(By.CLASS_NAME, 'f6431b446c.fbfd7c1165.e84eb96b1f').text
                     hotel_score = property.find_element(By.CLASS_NAME, 'a83ed08757.f88a5204c2.c057617e1a.b98133fb50').text.replace('\n', " ")
                     distance = property.find_element(By.CSS_SELECTOR, 'span[data-testid="distance"]').text
-                    link = property.find_element(By.XPATH, '//a[@data-testid="availability-cta-btn"]').get_attribute('href')
+                    link = property.find_element(By.XPATH, './/a[@data-testid="availability-cta-btn"]').get_attribute('href')
 
                     # Create a dictionary for each property
                     property_data = {
