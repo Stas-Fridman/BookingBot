@@ -1,5 +1,5 @@
 
-<h1 align="center">BookingBot</h1>
+<h1 align="center">BookingBot – Automated Hotel Booking System</h1>
 
 <p align="center">
   <b>An Automated Hotel Booking Tool for Booking.com</b>
@@ -10,7 +10,9 @@
 
 ## Description
 
-BookingBot is a Python-based automated tool designed to simplify and streamline the hotel booking process on Booking.com. This web scraper automates various tasks, including searching for hotels, applying filters, and sorting results based on your preferences. By the end of the process, you'll have neatly organized data to help you make the best choice for your stay.
+BookingBot is a Python-based automation tool designed to streamline the hotel booking process on Booking.com. Leveraging Selenium, it automates tasks such as searching for hotels, applying filters, selecting currencies, setting travel dates, and specifying the number of travelers—all without manual intervention.
+
+The system efficiently gathers and organizes hotel data, ensuring a smooth and optimized booking experience tailored to user preferences. It integrates advanced Web Scraping, browser automation, and dynamic parameter handling to adapt to changing search criteria.
 
 ---
 
